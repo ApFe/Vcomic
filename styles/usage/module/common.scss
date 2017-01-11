@@ -1,0 +1,238 @@
+$base-color:#fff;
+$base-clr:#fc2974;
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/iconfont.eot');
+  src: url('/images/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/iconfont.woff') format('woff'),
+  url('/images/fonts/iconfont.ttf') format('truetype'),
+  url('/images/fonts/iconfont.svg#iconfont') format('svg');
+};
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/iconmony.eot');
+  src: url('/images/fonts/iconmony.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/iconmony.woff') format('woff'),
+  url('/images/fonts/iconmony.ttf') format('truetype'),
+  url('/images/fonts/iconmony.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/icon-top.eot');
+  src: url('/images/fonts/icon-top.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/icon-top.woff') format('woff'),
+  url('/images/fonts/icon-top.ttf') format('truetype'),
+  url('/images/fonts/icon-top.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/icon-back.eot');
+  src: url('/images/fonts/icon-back.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/icon-back.woff') format('woff'),
+  url('/images/fonts/icon-back.ttf') format('truetype'),
+  url('/images/fonts/icon-back.svg#iconfont') format('svg');
+}
+
+//公共样式     %header{} ------->解析用@extend %header;在文件里引用即可达到效果
+%header{
+  header{
+    height:.52rem;
+    background:#ff5792;
+    ul{
+       @include flexbox();
+       height: .52rem;
+       li{
+           text-align: center;
+           height: 100%;
+           color: $base-color;
+       }
+       li:nth-child(2){
+           @include flex();
+           line-height: .52rem;
+           font-size: .18rem;
+           font-weight: 600;
+           
+       }
+       li:first-child,
+       li:last-child{
+           min-width: .54rem;
+           line-height: .52rem;
+           @include flexbox();
+           a{
+              @include flex();
+              @include flexbox();
+              min-width: .54rem;
+              line-height: .52rem;
+              text-align: center;
+              color: $base-color;
+              font-size: .14rem;
+              span:first-child{
+                @include flex();
+                text-align: center;
+                font-size: .21rem;
+              }
+           }
+           i{
+              @include flex(); 
+              font-size: .14rem;
+           }
+       }
+    }
+  }
+}
+%many{
+ .many{
+    
+        //--------滚动条设置开始-----
+    .head {
+        text-align: center;
+        height: .35rem;
+        line-height: .35rem;
+    }
+    .head img {
+        width: .14rem;
+        height: .14rem;
+        display: inline-block;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transition: transform 150ms;
+        -webkit-transition: transform 150ms;
+    }
+    
+    .up {
+        transform: rotate(360deg) !important;
+        -webkit-transform: rotate(360deg) !important;
+    }
+    .foot {
+        text-align: center;
+        height: .35rem;
+        line-height: .35rem;
+    }
+    .foot img {
+        width: .14rem;
+        height: .14rem;
+        display: inline-block;
+        /*transform: rotate(0deg);*/
+        /*-webkit-transform: rotate(0deg);*/
+        transition: transform 150ms;
+        -webkit-transition: transform 150ms;
+    }
+    .down {
+        transform: rotate(180deg) !important;
+        -webkit-transform: rotate(180deg) !important;
+    }
+//--------滚动条设置结束-----  
+        
+        
+        
+    .swiper-container{
+        height: 1.28rem;
+        //background: green;
+    }
+    nav{
+        height: .85rem;
+        background-color:#fff;
+        ul{
+           @include flexbox();
+           height: 100%;
+           li{
+               @include flex();
+               //@include transform(translateX(50%));
+               text-align: center;
+               margin-top:.1rem ;
+                b,i{
+                   //@include transform(translateX(50%));
+                   display: block;
+                   text-align: center;
+                   
+               }
+               b{
+                   font-size: .1rem;
+                   margin-top:.06rem ;
+                   color: #878787;
+               }
+               i{ 
+                   @include transform(translateX(-50%));
+                   border-radius: 50%;
+                   height: .47rem;
+                   width: .47rem;
+                   left: 50%;
+                   position: relative;
+                   font-size: .30rem;
+                   line-height: .47rem;
+                   color: $base-color;
+                }
+                
+            }
+           li:nth-child(1)>i{
+                background:#a3d706;
+            }
+            li:nth-child(2)>i{
+                background:#4be2cf;
+            }
+            li:nth-child(3)>i{
+                background: #fe96d3;
+            }
+            li:nth-child(4)>i{
+                background:#fe8bd0;
+            }
+            li:nth-child(5)>i{
+                background: #739cfd;
+            }
+           
+        }
+    }   
+    section{
+      
+        @include flex();
+        //overflow-y: scroll;//
+        width: 100%;
+        .se-top{
+            @include flexbox();
+            width: 100%;
+            height: .5rem;
+            margin: .1rem 0 .01rem;
+            background: #fff;
+            li{
+               @include flex(); 
+               text-align: center;
+               line-height: .5rem;
+               font-size: .12rem;
+               color: #fe5491;
+               i{
+                  font-size: .19rem; 
+               }
+            }
+        }
+        .seList {//
+          @include flexbox();
+          @include flex-wrap(wrap);
+          padding-right: .05rem;
+          width: 100%;
+          li {
+            width: 50%;
+            padding-left: .05rem;
+            padding-top: .05rem;
+            a{
+                display: inline-block;
+                color:#343434;
+            }
+            i, b {
+              background: #fff;
+              display: block;
+            }
+            i {
+              width: 100%;
+              img {
+                width: 100%;
+              }
+            }
+            b {
+              @include ellipsis(null, 2);
+              font-weight: normal;
+            }
+          }
+        }
+    } 
+  }
+}

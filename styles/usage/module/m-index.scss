@@ -1,0 +1,43 @@
+@charset "UTF-8";
+//@import "./common";
+#app{
+    height: 100%;
+//  display:flex;
+//  flex-flow: column nowrap;
+//  justify-content:space-between;
+    @include flexbox();
+    @include flex-direction(column);
+    header{
+        background-color:#fde23d;
+//      display:flex;
+        @include flexbox();
+        justify-content:center;
+        flex-glow:0;
+        flex-shrink:0;
+        height: .44rem;
+        line-height: .44rem;
+    }
+    section{
+        height: 100%;
+        flex-glow:1;
+        flexShrink:0;
+        flex-shrink:scroll;
+        background: #fff;
+    }
+    footer{
+        
+        flex-glow:0;
+        flex-shrink:0;
+        height:.49rem;
+//      display:flex;
+        @include flexbox();
+        .footerItem{
+            flex-grow:1;
+            line-height:50px;
+            text-align:center;
+            color: #000;
+        }
+    }
+    
+    
+}

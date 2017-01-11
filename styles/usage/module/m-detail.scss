@@ -1,0 +1,7 @@
+@import "./common";
+.m-detail{
+    @include flex();
+    width: 100%;
+    @extend %header;
+    
+}

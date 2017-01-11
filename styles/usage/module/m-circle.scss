@@ -1,0 +1,93 @@
+
+@import "./common";
+.m-circle{
+    @include flex();
+    
+    @include flexbox();
+    //@include flex-direction(column);
+    width: 100%;
+           #index-scroll{
+            height: 100%;
+            overflow:hidden;
+            width: 100%;
+            @extend %many;
+            .many{
+                .more{
+                    height: .8rem;
+                    width: 100%;
+                    background: $base-color;
+                    p{
+                        font-size: .12rem;
+                        color: #aaa;
+                        display: inline-block;
+                        padding-left: .06rem;
+                        width: 100%;
+                        height: .28rem;
+                        line-height: .28rem; 
+                    }
+                    .manyMore{
+                        @include border(1px 0 0 0, rgb(236,236,236));
+                        text-align: center;
+                        line-height:.52rem;
+                        color: #ff5792;
+                        font-size: .18rem;
+                        font-family: 600;
+                    }
+                }
+                >section{
+                    margin-top: .1rem;
+                    background-color: $base-color;
+                    p{
+                        font-size: .12rem;
+                        color: #aaa;
+                        display: inline-block;
+                        padding-left: .06rem;
+                        width: 100%;
+                        height: .2rem;
+                        padding-top: .04rem;
+                    }
+                    >ul{
+                       @include flexbox();
+                       @include flex-direction(column);   
+                       li{
+                           width: 100% !important;
+                           @include flex();
+                           
+                           span{
+                               width: 100%;
+                               font-size: .16rem;
+                               display: inline-block;
+                               @include flexbox();
+                               //@include flex-direction(column);
+                               i{
+                                  width: 33.3% !important; 
+                                  margin: 0.03rem;
+                                  @include flex();
+                               }
+                               
+                           }//
+                           span:first-child{
+                               height: 0.31rem;
+                               margin-top: .08rem;
+                               padding-left: .03rem;
+                               display: inline-block;
+                               line-height: 0.31rem;
+                               @include border(1px 0 0 0, rgb(236,236,236));
+                           } 
+                           span:last-child{
+                               font-size: .12rem;
+                               color: #aaa;
+                                 @include justify-content(space-between);
+                                 i:first-child{
+                                     text-align: left;
+                                 }
+                                 i:last-child{
+                                     text-align: right;
+                                 }
+                           }
+                       } 
+                    }
+                }
+            }
+         }
+}

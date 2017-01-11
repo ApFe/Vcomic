@@ -1,0 +1,13 @@
+@import "./common";
+.m-search{
+    @include flex();
+    
+    @include flexbox();
+    @include flex-direction(column);
+    width: 100%;
+           #index-scroll{
+            height: 100%;
+            overflow:hidden;
+            @extend %many;
+         }
+}
