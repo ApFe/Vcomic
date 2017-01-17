@@ -1,0 +1,57 @@
+
+[
+  {
+    "id":"耽美",
+    "imgSrc": "./images/cimc01.gif",
+    "doorprice":"77话惊艳回归",
+    "title": "河神大人求养"
+  },
+  {
+  	"id":"悬疑",
+    "imgSrc": "./images/cimc02.gif",
+    "doorprice":"第4话 巫女的报复",
+    "title": "赤炎"
+  },
+  {
+  	"id":"奇幻",
+    "imgSrc": "./images/cimc03.gif",
+    "doorprice":"77话惊艳回归",
+    "title": "蝉女"
+  },
+  {
+  	"id":"灵异",
+    "imgSrc": "./images/cimc04.gif",
+    "doorprice":"第27话还不是为了逗你开心",
+    "title": "男友来了大姨妈？！"
+  },
+  {
+  	"id":"成人",
+    "imgSrc": "./images/cimc05.gif",
+    "doorprice":"77话惊艳回归",
+    "title": "河神大人求养"
+  },
+  {
+  	"id":"爆笑",
+    "imgSrc": "./images/cimc06.gif",
+    "doorprice":"第35话针锋相对",
+    "title": "抖M神"
+  },
+  {
+  	"id":"脑洞",
+    "imgSrc": "./images/cimc07.gif",
+    "doorprice":"偶遇富二代的兼职宝地",
+    "title": "万花筒"
+  },
+  {
+  	"id":"剧情",
+    "imgSrc": "./images/cimc08.gif",
+    "doorprice":"第36话 离别",
+    "title": "密会情人——出轨俱乐部"
+  },
+  {
+  	"id":"穿越",
+    "imgSrc": "./images/cimc09.gif",
+    "doorprice":"第46话 与太子相遇",
+    "title": "我男票是锦衣卫"
+  }
+]

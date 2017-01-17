@@ -40,6 +40,10 @@ var Router=(function(){
 	}
 	var router=function(evt){
 		var href=evt.target.getAttribute("data-href");
+		console.log( href )
+		var cl=evt.target;
+		
+		$(cl).parent().addClass("active").siblings().removeClass("active")
 		for(var key in map){
 			if(href==key){
 				var comp=map[key];

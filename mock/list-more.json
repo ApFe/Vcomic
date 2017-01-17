@@ -1,0 +1,33 @@
+
+[
+  {
+    "imgSrc": "/images/1.gif",
+    "doorprice":"60",
+    "title": "10女装爆款全场包邮，速来抢购，全场九折......"
+  },
+  {
+    "imgSrc": "/images/2.gif",
+    "doorprice":"79",
+    "title": "12女装爆款全场包邮，速来抢购，全场九折......"
+  },
+  {
+    "imgSrc": "/images/3.gif",
+    "doorprice":"99",
+    "title": "13女装爆款全场包邮，速来抢购，全场九折......"
+  },
+  {
+    "imgSrc": "/images/4.gif",
+    "doorprice":"30",
+    "title": "14女装爆款全场包邮，速来抢购，全场九折......"
+  },
+  {
+    "imgSrc": "/images/5.gif",
+    "doorprice":"59",
+    "title": "15女装爆款全场包邮，速来抢购，全场九折......"
+  },
+  {
+    "imgSrc": "/images/6.gif",
+    "doorprice":"50",
+    "title": "16女装爆款全场包邮，速来抢购，全场九折......"
+  }
+]
