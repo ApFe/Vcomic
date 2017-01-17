@@ -2,6 +2,8 @@ var CompHeader=require('./header.js');
 var CompContent=require('./content.js');
 var CompHome=require('./home.js');
 var CompFooter=require('./footer.js');
+var MineLogin=require('./my-login.js');
+
 require('../styles/usage/app.scss');
 
 var Root=React.createClass({

@@ -1,6 +1,50 @@
 @import "./common";
-#my_login{
+.mine-login{
     @include flex();
     width: 100%;
+    div:first-child{
+    	@include flexbox();
+    	@include justify-content(center);
+    	span{
+    	
+    	}
+    }
+    div:nth-child(2){
+    	@include flex();
+    	@include flexbox();
+    	@include flex-direction(column);
+    	span:first-child{
+    		width:1.8rem;
+    		height:1.3rem;
+    	}
+    	span:nth-child(2){
+    		width:3.5rem;
+    		height:0.7rem;
+    	}
+    	span:nth-child(3){
+    		width:3.5rem;
+    		height:0.7rem;
+    	}
+    	span:nth-child(4){
+    		width:3.5rem;
+    		height:0.6rem
+    		button{
+    			width:100%;
+    			height:100%;
+    			background:#313e47;
+    			color:#fff;
+    			font-size:0.25rem;
+    		}
+    	}
+    	span:nth-child(5){
+    		color:#723300;
+    		font-size:0.25rem;
+    	}
+    	span:last-child{
+    		font-size:0.2rem;
+    		colr:#723300;
+    		opacity:0.4;
+    	}
+    }
     
 }

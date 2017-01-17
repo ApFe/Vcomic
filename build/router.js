@@ -37,6 +37,7 @@ var Router=(function(){
 				'home':'./mine.js'
 			}
 		}
+		
 	}
 	var router=function(evt){
 		var href=evt.target.getAttribute("data-href");
