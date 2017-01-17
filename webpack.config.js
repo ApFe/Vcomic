@@ -27,8 +27,22 @@ module.exports={
 			}
 		]  //可以写多个加载器
 	},
+	
+	devServer:{
+		contentBase:'./js/',
+		port:80,
+		host:'localhost',
+		proxy:{
+			'/api':{
+				target:'http://localhost:8999',
+				pathRewrite:{
+					'^/api':''
+				}
+			}
+		}
+	},
 	plugins:[
-		new webpack.optimize.UglifyJsPlugin(),
+		//new webpack.optimize.UglifyJsPlugin(),
 		new ET('bundle.css')
 	]
 }

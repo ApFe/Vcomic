@@ -1,0 +1,32 @@
+[
+  {
+    "id":"带上心愿去远方",
+    "imgSrc": ["/images/Ccl01.gif","/images/Ccl02.gif","/images/Ccl03.gif"],
+    "browse":"60",
+    "title": "一起去旅行"
+  },
+  {
+  	"id":"封存千年的曙光碑",
+    "imgSrc": ["/images/Ccl04.gif","/images/Ccl05.gif","/images/Ccl06.gif"],
+    "browse":"79",
+    "title": "一起去旅行"
+  },
+  {
+  	"id":"美了四级，美丽穿搭",
+    "imgSrc": ["/images/Ccl07.gif","/images/Ccl08.gif","/images/Ccl09.gif"],
+    "browse":"99",
+    "title": "穿衣搭配社"
+  },
+  {
+  	"id":"照片来了",
+    "imgSrc": ["/images/Ccl10.gif","/images/Ccl11.gif","/images/Ccl12.gif"],
+    "browse":"30",
+    "title": "穿衣搭配社"
+  },
+  {
+  	"id":"美妆护肤",
+    "imgSrc": ["/images/Ccl13.gif","/images/Ccl14.gif","/images/Ccl15.gif"],
+    "browse":"59",
+    "title": "护肤养颜馆"
+  }
+]
