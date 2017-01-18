@@ -42,8 +42,17 @@ var Router=(function(){
 		var href=evt.target.getAttribute("data-href");
 		console.log( href )
 		var cl=evt.target;
-		
+		console.log($(cl).eq())
 		$(cl).parent().addClass("active").siblings().removeClass("active")
+		
+		if(href=='/mine'){
+	
+			document.getElementsByTagName('header')[0].style.display = 'none';
+			
+		}else{
+			document.getElementsByTagName('header')[0].style.display = 'block';
+		}
+		
 		for(var key in map){
 			if(href==key){
 				var comp=map[key];

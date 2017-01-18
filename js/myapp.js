@@ -508,8 +508,17 @@
 			var href=evt.target.getAttribute("data-href");
 			console.log( href )
 			var cl=evt.target;
-			
+			console.log($(cl).eq())
 			$(cl).parent().addClass("active").siblings().removeClass("active")
+			
+			if(href=='/mine'){
+		
+				document.getElementsByTagName('header')[0].style.display = 'none';
+				
+			}else{
+				document.getElementsByTagName('header')[0].style.display = 'block';
+			}
+			
 			for(var key in map){
 				if(href==key){
 					var comp=map[key];
@@ -590,12 +599,89 @@
 	var CompMine=React.createClass({displayName: "CompMine",
 		render:function(){
 			return(
-				React.createElement("div", null, 
-					React.createElement("div", null, "1"), 
-					React.createElement("div", null, "2"), 
-					React.createElement("div", null, "3")
+				React.createElement("div", {className: "m-my"}, 
+					React.createElement("div", null, 
+						React.createElement("div", {className: "login"}, 
+							React.createElement("div", null), 
+							React.createElement("p", null, "登陆")
+						), 
+						React.createElement("ul", null, 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("p", null, "我的消息")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							)
+							
+						), 
+						React.createElement("ul", null, 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("p", null, "我的关注")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							), 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("p", null, "我的收藏")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							)
+						), 
+						React.createElement("ul", null, 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("p", null, "快看商城")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							), 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("p", null, "我的订单")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							)
+						), 
+						React.createElement("ul", null, 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("p", null, "浏览历史")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							), 
+							React.createElement("li", null, 
+								React.createElement("span", {className: "my-load"}, 
+									React.createElement("i", {className: "yo-ico"}, ""), 
+									React.createElement("span", null, 
+										React.createElement("p", null, "智能缓存"), 
+										React.createElement("p", null, "正在下载今天更新的漫画")
+									)
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+								
+							)
+						), 
+						React.createElement("ul", null, 
+							React.createElement("li", null, 
+								React.createElement("span", null, 
+									React.createElement("i", {className: "yo-ico"}, "㐾"), 
+									React.createElement("p", null, "设置")
+								), 
+								React.createElement("span", {className: "yo-ico"}, "")
+							)
+						)
+					)	
 				)
 			)
+		},
+		componentDidMount:function(){
+		
 		}
 	})
 	module.exports=CompMine;

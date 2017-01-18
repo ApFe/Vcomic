@@ -1,64 +1,90 @@
 .m-my{
     @include flex();
-   ul{
-   		@include flexbox();
-   		@include flex-direction(column);
-   		li{
-   			background:#fff;
-    		padding:0.08rem 0.15rem;
-    		border-bottom:solid 0.01rem #d7d7d7;
-    		font-size:0.16rem;
-    		color:#000;
-    		a{
-    			@include flexbox();
-    			@include justify-content(space-between);
-    		}
-    		span{
-    			@include flexbox();
-    			@include align-items(center);
-    		}
-    		&:first-child{
-    			margin:0.2rem 0;
-    			border:none;
-    			i{
-    				background:#eee;
-    			}
-    		}
-    		&:nth-child(2){
-    			i{
-    				background:#fe869f;
-    			}
-    		}
-    		&:nth-child(3){
-    			i{
-    				background:#fca901;
-    			}
-    		}
-    		&:nth-child(4){
-    			margin:0.2rem 0;
-    			i{
-    				background:#9bd656;
-    			}
-    		}
-    		&:nth-child(5){
-    			i{
-    				background:#5dc8fe;
-    			}
-    		}
-    		&:last-child{
-    			border:none;
-    			i{
-    				background:#fe80c0;
-    			}
-    		}
-    		i{
-    			width:.35rem;
-    			height:.35rem;
-    			margin-right:0.15rem;
-    			border-radius:50%;
-    			display:inline-block;
-    		}
-   		}
-
+    background:#f5f9f8;
+    width:100%;
+    height:100%;
+    div{
+        @include flexbox();
+        @include flex-direction(column);
+        background:#f5f9f8;
+        margin-bottom:0.11rem;
+       .login{
+            height:2.18rem;
+            width:100%;
+            background:#ffd703;
+            div{
+                height:0.8rem;
+                width:0.8rem;
+                border-radius:50%;
+                background:#424242;
+                margin:0.83rem auto 0.16rem;
+            }
+            p{
+                margin:0 auto;
+                color:#2e3f43;
+                font-size:0.16rem;
+                display:inline-block;
+            }
+       }
+    }
+    ul{
+       border-top:solid 0.01rem #dbdddc;
+       border-bottom:solid 0.01rem #dbdddc;
+       background:#fff;
+       padding-left:0.15rem;
+       margin-bottom:0.11rem;
+       li{
+            @include flexbox();
+            @include justify-content(space-between);
+            line-height:0.45rem;
+            padding-right:0.15rem;
+            padding-left:0.02rem;
+            span{
+               font-size:0.16rem;
+               i{
+                   margin-right:0.15rem;
+               }
+               p{
+                   display:inline-block;
+               }
+            }
+            .my-load{
+                @include flexbox();
+                padding-bottom:0.1rem;
+                i{
+                    @include align-items(flex-start);
+                }
+                span{
+                    display:inline-block;
+                    line-height:0.35rem;
+                    p:first-child{
+                        line-height:0.35rem;
+                    }
+                    p:last-child{
+                        font-size:0.1rem;
+                        color:#9e9e9e;
+                        line-height:0.1rem;
+                        display:block;
+                    } 
+                }
+                
+            }
+       }
+       &:nth-child(3),&:nth-child(4),&:nth-child(5){
+           li:first-child{
+               border-bottom:solid 0.01rem #dbdddc;
+           }
+       }
+       &:nth-child(2),&:nth-child(3){
+           line-height:0.6rem;
+       }
+       &:nth-child(5){
+           li:last-child{
+               >span:last-child{
+                   font-size:0.28rem;
+               }
+           }
+       }
    }
+
 }

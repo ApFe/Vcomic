@@ -8,6 +8,25 @@ $base-clr:#fc2974;
   url('/images/fonts/iconfont.ttf') format('truetype'),
   url('/images/fonts/iconfont.svg#iconfont') format('svg');
 };
+
+
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/iconfont-m.eot');
+  src: url('/images/fonts/iconfont-m.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/iconfont-m.woff') format('woff'),
+  url('/images/fonts/iconfont-m.ttf') format('truetype'),
+  url('/images/fonts/iconfont-m.svg#iconfont') format('svg');
+};
+@font-face {
+  font-family: 'yofont';
+  src: url('/images/fonts/iconfont-m-start.eot');
+  src: url('/images/fonts/iconfont-m-start.eot?#iefix') format('embedded-opentype'),
+  url('/images/fonts/iconfont-m-start.woff') format('woff'),
+  url('/images/fonts/iconfont-m-start.ttf') format('truetype'),
+  url('/images/fonts/iconfont-m-start.svg#iconfont') format('svg');
+};
+
 //公共样式     %header{} ------->解析用@extend %header;在文件里引用即可达到效果
 %header{
   header{
