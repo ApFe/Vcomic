@@ -10,7 +10,7 @@
     header{
         background-color:#fde23d;
 //      display:flex;
-        @include flexbox();
+        @include flexbox(); 
         justify-content:center;
         flex-glow:0;
         flex-shrink:0;
@@ -18,14 +18,13 @@
         line-height: .44rem;
     }
     section{
+        @include flex();
+        overflow: auto;
         height: 100%;
-        flex-glow:1;
-        flexShrink:0;
-        flex-shrink:scroll;
+        width: 100%;
         background: #fff;
     }
     footer{
-        
         flex-glow:0;
         flex-shrink:0;
         height:.49rem;

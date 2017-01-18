@@ -3,7 +3,6 @@ var Router=(function(){
 	var unmountFun=function(arr){
 		for(var i=0;i<arr.length;i++){
 			ReactDOM.unmountComponentAtNode(document.getElementById(arr[i]));
-			
 		}
 	}
 	var mountFun=function(obj){
